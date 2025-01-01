@@ -71,7 +71,7 @@ export default function DocPage() {
       <Accordion type="single" collapsible className="w-full">
         {doc.groups.map((group, index) => (
           <AccordionItem key={group.id} value={`item-${index}`}>
-            <AccordionTrigger><pre>{group.description}</pre></AccordionTrigger>
+            <AccordionTrigger className='hover:no-underline'><pre>{group.description}</pre></AccordionTrigger>
             <AccordionContent>
               <div className="space-y-4">
                 <div className="relative">
